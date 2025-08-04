@@ -1,0 +1,6 @@
+---
+- name: testting with ansible code
+  hosts: all
+  tasks: 
+  - name: test
+    command: echo "test code" 
