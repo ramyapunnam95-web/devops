@@ -1,10 +1,10 @@
 pipeline {
   agent any
-  stages {
-    stage('welcome note) {
-      steps {
+    stages {
+      stage('welcome note) {
+        steps {
          script {
-        println "welcome to dvs devops"
+           println "welcome to dvs devops"
       }
 
       }
