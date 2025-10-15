@@ -1,22 +1,18 @@
-def myfn(){
-    println "Hi all, welcome to dvs"    
-}
-def myfn(a,b){
-    sum=a+b
-    println "sum of ${a} & ${b} is, ${sum}"
-}
-pipeline{
+pipeline {
   agent any
-  stages {
-      stage('working with function') {
-        steps {
-          script {
-            myfn()
-            myfn(10,20)
-            myfn(300,400)
+  stages{
+    stage('working with fileOperation') {
+      steps{
+        script{
+          File file = new File("/opt/mydata.txt")
+          def lines = file.readLines()
+          println "Lines\n ${lines}"
+          for (line in line) {
+            println "myline is ${line}"
+          }
 
+                }
             }
-            }
-            
         }
-     }   }
+    }
+}
