@@ -1,22 +1,19 @@
+def myfn(){
+    println "Hi all, welcome to dvs"    
+}
+def myfn(a,b){
+    sum=a+b
+    println "sum of ${a} & ${b} is, ${sum}"
+}
 pipeline{
   agent any
   stages {
-      stage('working with loops') {
+      stage('working with function') {
         steps {
           script {
-            for(i=1;i<=5;i++) {
-                println "my i value is: ${i}"
-            }
-            list1=["aws","azure","devops"]
-            for(ele in list1) {
-                println "my element is: ${ele}"
-            }
-
-            j=6
-            while(j<=10) {
-                println "my j value is : ${j}"
-                j=j+1
-            }
+            myfn()
+            myfn(10,20)
+            myfn(300,400)
 
             }
             }
