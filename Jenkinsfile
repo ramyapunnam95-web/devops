@@ -1,12 +1,12 @@
 pipeline{
   agents any
-    stages{
-      stage{
-        steps{
-          script{
+  stages {
+      stage('working with conditions')
+        steps {
+          script {
             a=10
             b=20
-            if (a>b) {
+            if (a>b){
             println "a: ${a} is Big"
             }
             else{
@@ -18,4 +18,3 @@ pipeline{
             
         }
     }
-}
