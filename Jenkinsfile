@@ -1,7 +1,7 @@
 pipeline{
   agent any
   stages {
-      stage('working with conditions')
+      stage('working with conditions') {
         steps {
           script {
             a=10
@@ -18,3 +18,4 @@ pipeline{
             
         }
     }
+}
