@@ -16,10 +16,10 @@ pipeline {
           println "my workspace ${WORKSPACE}"
           println "my build no ${BUILD_NUMBER}"
 
-          #consuming values of parameters
+          /*consuming values of parameters*/
           println "my selected environment is ${params.ENV}"
           println "my selected version is ${params.version}"
-          #consuming values of environment
+          /*consuming values of environment*/
           println "my java version is ${env.JAVA_HOME}"
       }
 
