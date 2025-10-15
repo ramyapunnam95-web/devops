@@ -1,12 +1,12 @@
 pipeline {
   agent any
-    stages {
-      stage('welcome note') {
-        steps {
+  stages {
+    stage('working with variables') {
+      steps {
          script {
-           println "welcome to dvs devops"
-           age = 30;
-           println "my age is ${age}"
+          println "welcome to dvs devops"
+          println "my workspace ${WORKSPACE}"
+          println "my build no ${BUILD_NUMBER}"
       }
 
       }
